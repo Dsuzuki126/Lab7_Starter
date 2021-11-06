@@ -7,6 +7,8 @@ var urlsToCache = [
   '/assets/styles/main.css',
   '/assets/scripts/main.js',
   '/assets/scripts/Router.js',
+  'assets\components\RecipeCard.js',
+  'assets\components\RecipeExpand.js',
   '/Lab7-Starter/',
   '/Lab7-Starter/index.html'
 
@@ -38,7 +40,7 @@ self.addEventListener('activate', function (event) {
    * TODO - Part 2 Step 3
    * Create a function as outlined above, it should be one line
    */
-   event.waitUntil(clients.claim());
+   
    var cacheAllowlist = ['test-cache-v1','test2-cache-v1'];
 
    event.waitUntil(
