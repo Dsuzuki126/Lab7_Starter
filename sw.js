@@ -4,21 +4,9 @@
 const CACHE_NAME = 'lab-7-starter';
 var urlsToCache = [
   '/',
-  '/assets',
-  // '/assets/images',
-  // '/assets/styles',
-  // '/assets/images/icons',
   '/assets/styles/main.css',
-  // '/assets/scripts',
   '/assets/scripts/main.js',
-  // '/assets/scripts/Router.js', 
-  // '/assets/components/RecipeCard.js',
-  // '/assets/components/RecipeExpand.js', 
-  // '/assets/images/icons/5-star.svg',
-  // '/assets/images/icons/arrow-down.png',
-  // // '/favicon.ico',
-  // '/index.html',
-  // '/sw.js'
+  '/assets/scripts/Router.js',
   '/Lab7-Starter/',
   '/Lab7-Starter/index.html'
 
