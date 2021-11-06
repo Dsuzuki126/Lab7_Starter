@@ -16,7 +16,6 @@ var urlsToCache = [
   '/assets/images/icons/arrow-down.png',
   '/favicon.ico',
   '/index.html',
-  '/.vscode/settings.json',
   '/sw.js'
 
 ]
