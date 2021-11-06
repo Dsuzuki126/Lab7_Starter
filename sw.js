@@ -14,7 +14,7 @@ var urlsToCache = [
   // '/assets/scripts/Router.js', 
   // '/assets/components/RecipeCard.js',
   // '/assets/components/RecipeExpand.js', 
-  // '/assets/images/icons/5-star.svg',
+  '/assets/images/icons/5-star.svg',
   // '/assets/images/icons/arrow-down.png',
   // // '/favicon.ico',
   // '/index.html',
