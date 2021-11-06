@@ -207,7 +207,7 @@ function bindEscKey() {
   window.addEventListener("keydown", function(e) { 
     
     if (e.keyCode == 27) {
-      router.navigate("home", false);
+      router.navigate("home", true);
     }
   })
   
