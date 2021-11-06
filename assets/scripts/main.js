@@ -204,7 +204,7 @@ function bindEscKey() {
    * page. This will let us go back to the home page from the detailed page.
    */
    
-  document.addEventListener("keydown", function(e) { 
+  window.addEventListener("keydown", function(e) { 
     
     if (e.keyCode == 27) {
       router.navigate("home", false);
