@@ -5,11 +5,11 @@ const CACHE_NAME = 'lab-7-starter';
 var urlsToCache = [
   '/',
   '/assets',
-  '/assets/images',
-  '/assets/styles',
-  '/assets/images/icons',
+  // '/assets/images',
+  // '/assets/styles',
+  // '/assets/images/icons',
   '/assets/styles/main.css',
-  '/assets/scripts',
+  // '/assets/scripts',
   '/assets/scripts/main.js',
   // '/assets/scripts/Router.js', 
   // '/assets/components/RecipeCard.js',
@@ -19,6 +19,8 @@ var urlsToCache = [
   // // '/favicon.ico',
   // '/index.html',
   // '/sw.js'
+  '/Lab7-Starter/',
+  '/Lab7-Starter/index.html'
 
 ]
 
