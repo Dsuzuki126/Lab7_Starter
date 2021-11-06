@@ -16,6 +16,7 @@ var urlsToCache = [
   '/assets/images/icons/arrow-down.png',
   '/favicon.ico',
   '/index.html',
+  '/sw.js'
 
 ]
 
@@ -29,7 +30,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        
+        console.log("fails here?")
         return cache.addAll(urlsToCache);
       })
   );
