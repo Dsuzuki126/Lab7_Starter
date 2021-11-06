@@ -7,8 +7,8 @@ var urlsToCache = [
   '/assets/styles/main.css',
   '/assets/scripts/main.js',
   '/assets/scripts/Router.js',
-  'assets\components\RecipeCard.js',
-  'assets\components\RecipeExpand.js',
+  '/assets\components\RecipeCard.js',
+  '/assets\components\RecipeExpand.js',
   '/Lab7-Starter/',
   '/Lab7-Starter/index.html'
 
