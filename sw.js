@@ -9,11 +9,6 @@ var urlsToCache = [
   '/assets/scripts/Router.js', 
   '/assets/components/RecipeCard.js',
   '/assets/components/RecipeExpand.js', 
-  '/assets/images/icons/0-star.svg',
-  '/assets/images/icons/1-star.svg',
-  '/assets/images/icons/2-star.svg',
-  '/assets/images/icons/3-star.svg',
-  '/assets/images/icons/4-star.svg',
   '/assets/images/icons/5-star.svg',
   '/assets/images/icons/arrow-down.png',
   '/favicon.ico',
@@ -33,6 +28,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
+        
         return cache.addAll(urlsToCache);
       })
   );

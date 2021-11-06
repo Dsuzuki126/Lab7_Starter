@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 // Initialize function, begins all of the JS code in this file
 async function init() {
+  
   initializeServiceWorker();
 
   try {
@@ -41,7 +42,7 @@ async function init() {
     console.log(`Error fetching recipes: ${err}`);
     return;
   }
-
+  
   createRecipeCards();
   bindShowMore();
   bindEscKey();
@@ -57,9 +58,10 @@ function initializeServiceWorker() {
    *  TODO - Part 2 Step 1
    *  Initialize the service worker set up in sw.js
    */
+   
    if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
       }, function(err) {
@@ -180,7 +182,9 @@ function bindShowMore() {
  *                             listeners to
  * @param {String} pageName the name of the page to navigate to on click
  */
+ 
 function bindRecipeCard(recipeCard, pageName) {
+  
   recipeCard.addEventListener('click', e => {
     if (e.path[0].nodeName == 'A') return;
     router.navigate(pageName, false);
@@ -198,7 +202,9 @@ function bindEscKey() {
    * if the escape key is pressed, use your router to navigate() to the 'home'
    * page. This will let us go back to the home page from the detailed page.
    */
+   
   document.addEventListener("keydown", function(e) { 
+    
     if (e.keyCode == 27) {
       router.navigate("home", false);
     }
